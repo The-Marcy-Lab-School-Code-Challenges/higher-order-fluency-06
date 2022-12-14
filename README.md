@@ -9,25 +9,63 @@
 5. Using the browser, verify that your solution is in your remote repo on Github.
 
 ## Problems 
+### **Test all your solutions for the questions 1-4 with the following variable:** 
 
-1. Write a function that takes an array of numbers and returns a new array containing only the even numbers in the original array.
-```js
-onlyEven([3, 15, 2, 18, 21, 26]); //returns [2, 18, 26]
+```jsx
+const alumni = [
+{name:'Jarrit', job:'TPT',language:'JavaScript', age:23}, 
+{name:'Stephanie', job:'JPMorgan',language:'JavaScript', age:24}, 
+{name:'Devonte', job:'WW',language:'JavaScript', age:23}, 
+{name:'Enmanuel', job:'Asana',language:'JavaScript', age:23},
+{name:'Shemar', job:'SquareSpace',language:'JavaScript', age:23},
+{name:'Cielo', job:'NYT',language:'JavaScript', age:22},
+{name:'Carmen', job:'Marcy Lab School',language:'JavaScript', age:21},
+{name:'Itzel', job:'Marcy Lab School',language:'JavaScript', age:22},
+{name:'Ray', job:'Square Space',language:'JavaScript', age:21},
+{name:'Jan', job:'Square Space',language:'JavaScript', age:22},
+{name:'Uzma', job:'Thyme Care',language:'JavaScript', age:22}]
 ```
 
-2. Write a function that takes an array of numbers and returns a new array with the original array elements doubled.
-```js
-doubled([2, 40, 14, 3, 25]); //returns [4, 80, 28, 6, 50]
-```
+**Solve the following problems using higher order methods**
 
-3. Write a function that takes a string argument and returns a new string with vowels deleted.
-```js
-removeVowelsString("code challenge"); //returns "cd chllng"
-```
+1. Write a function named `oddJob` that takes an array of objects and returns an array of objects if the job length is an odd number. 
+    
+    ```jsx
+    oddJob(alumni) //returns [
+      { name: 'Jarrit', job: 'TPT', language: 'JavaScript', age: 22 },
+      { name: 'Enmanuel', job: 'Asana', language: 'JavaScript', age: 21 },
+      {
+        name: 'Shemar',
+        job: 'SquareSpace',
+        language: 'JavaScript',
+        age: 23
+      },
+      { name: 'Cielo', job: 'NYT', language: 'JavaScript', age: 21 },
+      { name:'Uzma', job:'Thyme Care',language:'JavaScript', age:22 }
+    ]
+    ```
 
-4. Write a function that takes a string and returns that string in snake case (all lowercase characteres with underscores between words):
-```js
-snakeCase("This is a Sentence"); // returns "this_is_a_sentence"
-```
+2. Write a function named `ninetiesBabies` that takes an array of objects and returns an array of only the objects where the age property is larger than 21.
+    
+    ```jsx
+    ninetiesBabies(alumni) // returns [
+      { name: 'Jarrit', job: 'TPT', language: 'JavaScript', age: 22 },
+      { name: 'Devonte', job: 'WW', language: 'JavaScript', age: 23 },
+      { name: 'Shemar', job: 'SquareSpace', language: 'JavaScript', age: 23 }
+    ]
+    ```
+
+3. Write a function named `updateLanguage` that takes an array of objects and updates the language value to ES6 if the language is JavaScript, return the entire object. 
+    
+    ```jsx
+    updateLanguage(alumni) // [
+      { name: 'Jarrit', job: 'TPT', language: 'ES6', age: 22 },
+      { name: 'Stephanie', job: 'JPMorgan', language: 'ES6', age: 21 },
+      { name: 'Devonte', job: 'WW', language: 'ES6', age: 23 },
+      { name: 'Enmanuel', job: 'Asana', language: 'ES6', age: 21 },
+      { name: 'Shemar', job: 'SquareSpace', language: 'ES6', age: 23 },
+      { name: 'Cielo', job: 'NYT', language: 'ES6', age: 21 }
+    ]
+    ```
 
 
